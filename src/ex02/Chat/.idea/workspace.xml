@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39c33b7e-9621-42bc-bb75-af8cf47a891e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/977e9e3d-c620-44e7-aef8-cfecac05c148.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/977e9e3d-c620-44e7-aef8-cfecac05c148.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school21/chat/app/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/school21/chat/app/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school21/chat/models/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/school21/chat/models/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/school21/chat/repositiries/MessageRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/school21/chat/repositiries/MessageRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/school21/chat/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706381421190</updated>
       <workItem from="1706381422250" duration="4566000" />
-      <workItem from="1706435239848" duration="2607000" />
+      <workItem from="1706435239848" duration="2932000" />
     </task>
     <servers />
   </component>
