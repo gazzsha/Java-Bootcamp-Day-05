@@ -46,12 +46,16 @@ public class MessageRepositoryImpl implements MessageRepository {
         try (Connection connection = dataSource.getConnection();) {
             final String SQL_query = "insert into bootcamp.message(author,room,text,time) values(" +
                     "?,?,?,?)";
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL_query);
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL_query,Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setInt(1,authorId);
             preparedStatement.setInt(2,roomId);
             preparedStatement.setString(3,message.getText());
             preparedStatement.setTimestamp(4, Timestamp.valueOf(message.getDate()));
-            
+            preparedStatement.executeUpdate();
+            ResultSet resultSet = preparedStatement.getGeneratedKeys();
+            if (resultSet.next()) {
+                message.setId(resultSet.getInt("id"));
+            }
         }
     }
 

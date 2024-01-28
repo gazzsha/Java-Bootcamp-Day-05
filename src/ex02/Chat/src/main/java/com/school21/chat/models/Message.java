@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Message {
 
-    private int id;
+    private Integer id;
 
     private User author;
 
@@ -38,11 +38,11 @@ public class Message {
     }
 
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -82,7 +82,7 @@ public class Message {
 
         Message message = (Message) o;
 
-        if (id != message.id) return false;
+        if (!Objects.equals(id,message.id)) return false;
         if (!Objects.equals(author, message.author)) return false;
         if (!Objects.equals(room, message.room)) return false;
         if (!Objects.equals(text, message.text)) return false;
